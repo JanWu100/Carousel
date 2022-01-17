@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e75f0e5d64.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>The Carousel</title>
+  </head>
+  <body>
+    <div id="carousel" class="container heading">
+      <h2>THE Carousel</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+        voluptatum veritatis? Ipsum est modi aliquam temporibus possimus porro
+        inventore ratione blanditiis.
+      </p>
+
+      <div class="carousel" data-carousel>
+        <svg
+          data-carousel-button="next"
+          class="btn-next"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+        >
+          <g id="next-btn">
+            <circle id="elipse" cx="15" cy="15" r="15" fill="#50DCFF" />
+            <path
+              id="arrow-right"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.4491 7.47628C13.814 6.84124 12.7844 6.84124 12.1494 7.47628C11.5144 8.11132 11.5144 9.14092 12.1494 9.77596L17.3735 15L12.1494 20.2241C11.5144 20.8591 11.5144 21.8887 12.1494 22.5237C12.7845 23.1588 13.8141 23.1588 14.4491 22.5237L20.6617 16.3112C21.0203 15.9526 21.1764 15.4681 21.13 15C21.1763 14.5318 21.0202 14.0474 20.6617 13.6888L14.4491 7.47628Z"
+              fill="white"
+            />
+          </g>
+        </svg>
+        <svg
+          data-carousel-button="prev"
+          class="btn-prev"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+        >
+          <g id="prev-btn">
+            <circle
+              id="elipse"
+              cx="15"
+              cy="15"
+              r="15"
+              transform="rotate(-180 15 15)"
+              fill="#50DCFF"
+            />
+            <path
+              id="arrow-left"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M15.5509 22.5237C16.186 23.1588 17.2156 23.1588 17.8506 22.5237C18.4856 21.8887 18.4856 20.8591 17.8506 20.224L12.6265 15L17.8506 9.77595C18.4856 9.14091 18.4856 8.11131 17.8506 7.47627C17.2155 6.84123 16.1859 6.84123 15.5509 7.47627L9.33834 13.6888C8.97973 14.0474 8.82363 14.5319 8.87004 15C8.82366 15.4682 8.97976 15.9526 9.33835 16.3112L15.5509 22.5237Z"
+              fill="white"
+            />
+          </g>
+        </svg>
+
+      
+
+        <div data-slides>
+
+          <div class="slide" data-active>
+            <div class="slide__image">
+              <img src="/images/man_in_glasses.jpg" alt="" srcset="" />
+            </div>
+
+            <div class="slide__body">
+              <h3>The man</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus harum ad amet.
+              </p>
+            </div>
+          </div>
+
+          <div class="slide">
+
+            <div class="slide__image">
+              <img src="/images/balcony.png" alt="" srcset="" />
+            </div>
+
+            <div class="slide__body">
+              <h3>the second</h3>
+              <p>
+                Photo by
+                <a
+                  target="blank"
+                  href="https://unsplash.com/@annaskrzynska?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Anna Skrzyńska</a
+                >
+                on
+                <a
+                  target="blank"
+                  href="https://unsplash.com/t/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Unsplash</a
+                >
+              </p>
+            </div>
+
+          </div>
+
+          <div class="slide">
+
+            <div class="slide__image">
+              <img src="/images/texture.jpg" alt="" srcset="" />
+            </div>
+
+            <div class="slide__body">
+              <h3>the third</h3>
+              <p>
+                Photo by
+                <a
+                  target="blank"
+                  href="https://www.pexels.com/@anniroenkae?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                  >Anni Roenkae</a
+                >
+                from
+                <a
+                  target="blank"
+                  href="https://www.pexels.com/photo/photo-of-acrylic-paint-2832432/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                  >Pexels</a
+                >
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        
+
+      </div>
+      <div class="dot__wrapper">
+        <div class="carousel__dot"></div>
+        <div class="carousel__dot"></div>
+        <div class="carousel__dot dot--active"></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
