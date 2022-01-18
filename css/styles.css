@@ -210,7 +210,7 @@ p {
   background: rgb(71, 71, 71);
 }
 
-.dot--active {
+.carousel__dot[data-active] {
   border: 2px solid var(--color-primary);
   width: 10px;
   height: 10px;
