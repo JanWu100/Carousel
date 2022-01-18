@@ -108,14 +108,22 @@ buttons.forEach((button) => {
   });
 });
 
+
+
+
+
+
+
+
 let addSlide = document.querySelector(".add");
 let removeSlide = document.querySelector(".remove");
 addSlide.addEventListener("click", () => {
+  slides = [];
+    dots = [];
   if (startInput.length > 20) {
     alert("I think it is enough slides for one Carousel ;)");
   } else {
-    slides = [];
-    dots = [];
+   
 
     startInput.push({
       image: `https://source.unsplash.com/random?sig=${Math.floor(
