@@ -80,17 +80,13 @@
     <div class="dot__wrapper"></div>
 
     <div class="buttons">
-      <button class="btn btn--primary remove">remove</button>
-      <button type="submit" class="btn btn--primary add">Add</button>
+      <button class="btn btn--primary btn-remove">remove</button>
+      <button class="btn btn--primary btn-add">Add</button>
     </div>
 
     <div class="form">
-        
-
       <div class="form-item">
-        <input class="title-input" type="text" placeholder="Title" />
-        
-
+        <input class="title-input" type="text" placeholder="Title" onkeyup="allowAlphaNumericSpace(this)"/>
       </div>
 
       <div class="form-item">
@@ -98,8 +94,8 @@
           class="text-input"
           type="text"
           placeholder="Body text"
+          onkeyup="allowAlphaNumericSpace(this)"
         ></textarea>
-        
       </div>
     </div>
 
